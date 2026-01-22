@@ -182,10 +182,6 @@ body {
     .right {
         left: 0%;
     }
-
-    .hero-section h1 {
-        font-size: 2.5rem;
-    }
 }
 
 .story-card {
@@ -274,4 +270,17 @@ body {
 
 .btn-floating i {
     font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        background-attachment: scroll !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        height: 100vh;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
 }
