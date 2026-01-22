@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+:root {
+    --olympic-blue: #0081C8;
+    --olympic-yellow: #FCB131;
+    --olympic-black: #000000;
+    --olympic-green: #00A651;
+    --olympic-red: #EE334E;
+    --olympic-grey: #F4F4F4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #222;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: #FFFFFF !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(to right, var(--olympic-blue), var(--olympic-yellow), var(--olympic-black), var(--olympic-green), var(--olympic-red)) 1;
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+    color: var(--olympic-black) !important;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.navbar-brand i {
+    color: var(--olympic-red);
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #555 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--olympic-blue) !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=1920');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
+}
+
+.hero-section h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+.btn-primary-olympic {
+    background-color: var(--olympic-blue);
+    color: white;
+    border: none;
+    font-weight: 700;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-olympic:hover {
+    background-color: var(--olympic-red);
+    transform: translateY(-3px);
+    color: white;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #E0E0E0;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border: 6px solid #ccc;
+    top: 20px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(1)::after {
+    border-color: var(--olympic-blue);
+}
+
+.timeline-item:nth-child(2)::after {
+    border-color: var(--olympic-yellow);
+}
+
+.timeline-item:nth-child(3)::after {
+    border-color: var(--olympic-black);
+}
+
+.timeline-item:nth-child(4)::after {
+    border-color: var(--olympic-green);
+}
+
+.left::after {
+    right: -12px;
+}
+
+.right::after {
+    left: -12px;
+}
+
+.timeline-item .content {
+    padding: 30px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid var(--olympic-blue);
+}
+
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item::after {
+        left: 19px;
+    }
+
+    .right {
+        left: 0%;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.story-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.story-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.story-card img {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.story-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-weight: 800;
+    color: var(--olympic-black);
+}
+
+.btn-outline-dark {
+    border-color: var(--olympic-black);
+    color: var(--olympic-black);
+    font-weight: 600;
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--olympic-black);
+    color: white;
+}
+
+.modal-header {
+    background-color: white;
+    color: var(--olympic-black);
+    border-bottom: 4px solid var(--olympic-blue);
+}
+
+.modal-title {
+    font-weight: 800;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.modal-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.btn-floating {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: none;
+    z-index: 99;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-floating i {
+    font-size: 1.2rem;
+}

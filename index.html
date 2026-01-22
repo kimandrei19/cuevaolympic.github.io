@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <title>Olympic Journey Hub</title>
+    <link rel="manifest" href="manifest.json">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥇</text></svg>">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-torch"></i> OLYMPIC HUB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#values">Values</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stories">Stories</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <div class="container text-center reveal">
+            <h1 class="display-1">STRONGER TOGETHER</h1>
+            <p class="lead mb-4 fw-bold">Celebrating the human spirit through sport since 1896.</p>
+            <a href="#timeline" class="btn btn-primary-olympic btn-lg rounded-pill">Explore History</a>
+        </div>
+    </header>
+
+    <section id="values" class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="mb-5 fw-bold reveal text-uppercase">Olympic Values</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4 reveal">
+                    <i class="fas fa-handshake fa-4x mb-3" style="color: var(--olympic-blue);"></i>
+                    <h3 class="fw-bold">Friendship</h3>
+                    <p class="text-muted">Building a peaceful and better world through sport.</p>
+                </div>
+                <div class="col-md-4 mb-4 reveal">
+                    <i class="fas fa-fire fa-4x mb-3" style="color: var(--olympic-red);"></i>
+                    <h3 class="fw-bold">Respect</h3>
+                    <p class="text-muted">Respect for yourself, others, and the rules.</p>
+                </div>
+                <div class="col-md-4 mb-4 reveal">
+                    <i class="fas fa-medal fa-4x mb-3" style="color: var(--olympic-yellow);"></i>
+                    <h3 class="fw-bold">Excellence</h3>
+                    <p class="text-muted">Giving one's best, on the field of play or in life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="py-5" style="background-color: #F8F9FA;">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold reveal text-uppercase">Historic Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item left reveal">
+                    <div class="content">
+                        <h4 class="fw-bold" style="color: var(--olympic-blue);">1896 - Athens</h4>
+                        <p>The first modern games were held in Greece, honoring the ancient traditions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right reveal">
+                    <div class="content">
+                        <h4 class="fw-bold" style="color: var(--olympic-yellow);">1936 - Berlin</h4>
+                        <p>Jesse Owens defies the odds and wins 4 gold medals.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left reveal">
+                    <div class="content">
+                        <h4 class="fw-bold" style="color: var(--olympic-black);">2020 - Tokyo</h4>
+                        <p>Hidilyn Diaz wins the first Gold for the Philippines.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right reveal">
+                    <div class="content">
+                        <h4 class="fw-bold" style="color: var(--olympic-green);">2024 - Paris</h4>
+                        <p>The games return to Paris with urban sports and sustainability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stories" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold reveal text-uppercase">Inspiring Stories</h2>
+            <div class="row g-4">
+
+                <div class="col-md-4 reveal">
+                    <div class="card h-100 story-card">
+                        <img src="images/jesse.jpg" class="card-img-top" alt="Track">
+                        <div class="card-body">
+                            <h5 class="card-title">Jesse Owens (1936)</h5>
+                            <p class="card-text text-muted">Standing tall against discrimination in Berlin.</p>
+                            <button class="btn btn-outline-dark btn-sm w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalOwens">Read Full Story</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 reveal">
+                    <div class="card h-100 story-card">
+                        <img src="images/hidilyn.jpg" class="card-img-top" alt="Weightlifting">
+                        <div class="card-body">
+                            <h5 class="card-title">Hidilyn Diaz (2020)</h5>
+                            <p class="card-text text-muted">Ending a 97-year gold medal drought for the Philippines.</p>
+                            <button class="btn btn-outline-dark btn-sm w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalDiaz">Read Full Story</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 reveal">
+                    <div class="card h-100 story-card">
+                        <img src="images/phelps.jpg" class="card-img-top" alt="Swimming">
+                        <div class="card-body">
+                            <h5 class="card-title">Michael Phelps (2008)</h5>
+                            <p class="card-text text-muted">The impossible feat of 8 Gold Medals in one games.</p>
+                            <button class="btn btn-outline-dark btn-sm w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalPhelps">Read Full Story</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 reveal">
+                    <div class="card h-100 story-card">
+                        <img src="images/nadia.jpg" class="card-img-top" alt="Gymnastics">
+                        <div class="card-body">
+                            <h5 class="card-title">Nadia Comăneci (1976)</h5>
+                            <p class="card-text text-muted">The first "Perfect 10" in Olympic history.</p>
+                            <button class="btn btn-outline-dark btn-sm w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalNadia">Read Full Story</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 reveal">
+                    <div class="card h-100 story-card">
+                        <img src="images/usain.jpg" class="card-img-top" alt="Sprinting">
+                        <div class="card-body">
+                            <h5 class="card-title">Usain Bolt (2008)</h5>
+                            <p class="card-text text-muted">Redefining human speed and showmanship.</p>
+                            <button class="btn btn-outline-dark btn-sm w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalBolt">Read Full Story</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 reveal">
+                    <div class="card h-100 story-card">
+                        <img src="images/redmond.jpg" class="card-img-top" alt="Helping hand">
+                        <div class="card-body">
+                            <h5 class="card-title">Derek Redmond (1992)</h5>
+                            <p class="card-text text-muted">A father's love finishes the race.</p>
+                            <button class="btn btn-outline-dark btn-sm w-100" data-bs-toggle="modal"
+                                data-bs-target="#modalRedmond">Read Full Story</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modalOwens" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">The Berlin Statement</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/jesse.jpg"
+                        class="modal-img" alt="Jesse Owens">
+                    <p><strong>Year:</strong> 1936 Berlin</p>
+                    <p>In 1936, Adolf Hitler intended to use the Berlin Games as a propaganda tool. Jesse Owens, an
+                        African-American grandson of slaves, had other plans.</p>
+                    <p>Owens won not one, but <strong>four gold medals</strong> (100m, 200m, Long Jump, 4x100m relay).
+                        His victories single-handedly dismantled the Nazi ideology on the global stage, proving that
+                        excellence is not defined by race but by character and skill.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalDiaz" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Philippines' First Gold</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/hidilyn.jpg" class="modal-img"
+                        alt="Hidilyn Diaz">
+                    <p><strong>Year:</strong> 2020 Tokyo</p>
+                    <p>For 97 years, the Philippines competed in the Olympics without a single gold medal. In 2021
+                        (Tokyo 2020), weightlifter Hidilyn Diaz carried the weight of a nation on her shoulders.</p>
+                    <p>Competing in the 55kg category, she faced the world record holder from China. In a dramatic final
+                        lift, Diaz successfully cleared 127kg—a weight she had never lifted in competition before. As
+                        the bar dropped, her tears flowed, signalling a historic moment of national pride.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPhelps" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">The Golden Sweep</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/phelps.jpg"
+                        class="modal-img" alt="Michael Phelps">
+                    <p><strong>Year:</strong> 2008 Beijing</p>
+                    <p>The record for most gold medals in a single game was 7. Michael Phelps aimed for 8. It was
+                        considered an impossible schedule.</p>
+                    <p>Phelps swam 17 races in 9 days. He won every single final, breaking 7 world records in the
+                        process. The most thrilling moment was the 100m Butterfly, where he won by 0.01
+                        seconds—cementing his status as the greatest swimmer of all time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalNadia" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">The Perfect 10</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/nadia.jpg"
+                        class="modal-img" alt="Nadia Comaneci">
+                    <p><strong>Year:</strong> 1976 Montreal</p>
+                    <p>Before 1976, it was believed that a "perfect 10" score in gymnastics was impossible. Scoreboards
+                        were only designed to display three digits.</p>
+                    <p>14-year-old Romanian gymnast Nadia Comăneci performed a flawless routine. When the score flashed,
+                        it read "1.00". The crowd was confused until the judges clarified: she had scored a 10.0. She
+                        went on to score six more perfect 10s.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBolt" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Lightning Bolt</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/usain.jpg"
+                        class="modal-img" alt="Usain Bolt">
+                    <p><strong>Year:</strong> 2008 Beijing</p>
+                    <p>The Men's 100m final is the most watched event in the Olympics. In 2008, Usain Bolt didn't just
+                        win; he put on a show.</p>
+                    <p>Bolt exploded off the blocks and by the 80m mark, he was so far ahead that he dropped his arms
+                        and celebrated before crossing the line. Despite slowing down, he still broke the world record
+                        (9.69s).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalRedmond" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Finishing Together</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/redmond.jpg"
+                        class="modal-img" alt="Derek Redmond">
+                    <p><strong>Year:</strong> 1992 Barcelona</p>
+                    <p>British runner Derek Redmond was a favorite for the 400m gold. Halfway through the race, his
+                        hamstring snapped.</p>
+                    <p>In agony, he refused to stop. He stood up and hopped. Suddenly, a man broke through security—it
+                        was his father, Jim. "We started this together, we'll finish this together," his dad said. Arm
+                        in arm, they crossed the finish line as the crowd gave them a standing ovation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary-olympic btn-floating" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer class="text-center py-4 mt-auto" style="background-color: var(--olympic-grey); color: #555;">
+        <p class="mb-0 fw-bold">&copy; 2024 Olympic Hub. Unofficial Site.</p>
+        <small>Educational Project inspired by the Olympic Brand.</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
